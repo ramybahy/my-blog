@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.container {
+  margin:auto;
+  max-width:1280px;
+}
+  
+.textContainer {
+  display:flex; align-items: center;    flex-wrap: wrap;
+  *{flex:1;}
+  max-width: 1133px;
+  margin-bottom: -50px;
+  z-index: 2;
+  position: relative;
+  gap:2rem;
+}
+
+.textContainerWhite {
+  background-color:white;
+  padding: 64px;
+}
+
+.image{
+  width:100%;
+  object-fit: cover;
+  height:auto;
+}
+.imageContainer{
+position:relative;
+z-index: 1;
+}
+
+.imageCaptionContainer{
+    gap:0 68px;
+    background-color: #FFD050;
+  display:flex;    flex-wrap: wrap;
+  position: absolute;
+  bottom:5px;
+  left:109px;
+padding: 32px 48px 55px;
+&::before{
+  content:"";
+  display: block;
+  height:23px;
+  bottom: 0;
+  left: 0px;
+  width: 50%;
+  position: absolute;
+  background: #592EA9;
+}
+&::after{
+  content:"";
+  display: block;
+  height:23px;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  position: absolute;
+  background: #FFD050;
+}
+  }
+
+.imageCaption{
+  h2{
+    font: size 56px;
+  }
+}
+.imageFooter {
+  display:flex;    flex-wrap: wrap;
+  gap:2rem;
+ *{flex:1;}
+ background-color: #F4F0F8;
+ padding: 128px 108px 41px;
+ h2{
+  margin-bottom:1rem;
+ }
+ }
+ .tagline{font-family: "inter",sans-serif;text-transform: uppercase; margin-bottom: 1rem;}
